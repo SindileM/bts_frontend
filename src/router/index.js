@@ -1,26 +1,59 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "../views/Home.vue";
+import Profile from "../views/Profile.vue";
+import Post from "../views/Post.vue";
+import SignIn from "../views/SignIn.vue";
+import SignUp from "../views/SignUp.vue";
+import Signup from "../components/Signup.vue";
+import UpdateProfile from "../components/UpdateProfile.vue";
+import DeleteProfile from "../components/DeleteProfile.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "home",
+    component: Home,
   },
   {
-    // path: '/about',
-    // name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/About.vue')
-    }
-  }
-]
+    path: "/profile",
+    name: "profile",
+    component: Profile,
+  },
+  {
+    path: "/signup",
+    name: "signup",
+    component: SignUp,
+  },
+  {
+    path: "/success",
+    name: "success",
+    component: Signup,
+  },
+  {
+    path: "/profile/updated",
+    name: "updated",
+    component: UpdateProfile,
+  },
+  {
+    path: "/profile/deleted",
+    name: "deleted",
+    component: DeleteProfile,
+  },
+  {
+    path: "/signin",
+    name: "signin",
+    component: SignIn,
+  },
+  {
+    path: "/post/:id",
+    name: "post",
+    component: Post,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
