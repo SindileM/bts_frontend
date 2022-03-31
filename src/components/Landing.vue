@@ -2,7 +2,7 @@
   <section class="landing-section">
     <header class="landing-header">
       <h2>BTS ARMY BLOG</h2>
-      <!-- <h4>Self Love | Activate | Surpass</h4> -->
+      <h4>Good Music| Good People | Self Love</h4>
     </header>
   </section>
 </template>

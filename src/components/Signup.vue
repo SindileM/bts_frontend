@@ -5,7 +5,7 @@
         <h4>Welcome to BTS ARMY BLOG!</h4>
       </header>
       <article class="success-content">
-        <p>Thank you current and future ARMY for cming to my blog. I hope you have a good time.
+        <p>Thank you current and future ARMY for coming to my blog. I hope you have a good time.</p>
       
       </article>
       <div class="sign-up">

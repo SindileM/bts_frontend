@@ -11,7 +11,6 @@ components:{
   Navbar,
 },
 };
-
 </script>
 
 <style>

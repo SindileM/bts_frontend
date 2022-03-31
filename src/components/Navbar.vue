@@ -8,8 +8,7 @@
         <a href="#contact-page" class="nav-link">Contact</a>
         <a href="#">
           <router-link :to="{ path: '/profile' }" class="nav-link"
-            >Profile</router-link
-          >
+            >Profile</router-link>
         </a>
         <a class="nav-link sign-out" @click.prevent="SignOut">Sign Out</a>
       </div>

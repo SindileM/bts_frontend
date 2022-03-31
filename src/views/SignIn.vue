@@ -52,7 +52,7 @@
   </div>
   <footer class="blog-footer">
     <div class="footer-copyright">
-      <h6 class="copyright">Copyright © 2022 BTS ARMY BLOG/>h6>
+      <h6 class="copyright">Copyright © 2022 BTS ARMY BLOG </h6>
     </div>
   </footer>
 </template>
@@ -79,7 +79,7 @@ export default {
     };
   },
   computed: {
-    loogedIn() {
+    loggedIn() {
       return this.$store.state.auth.loggedIn;
     },
   },

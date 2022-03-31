@@ -67,12 +67,6 @@
       v-if="!loading && errorMessage"
       :innerHTML="errorMessage"
     ></div>
-    <!-- LOADER -->
-    <div v-if="loading">
-      <div class="loading-container">
-        <Loader />
-      </div>
-    </div>
   </div>
 
   <!-- CREATE MODAL -->
