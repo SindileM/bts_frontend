@@ -163,7 +163,7 @@
 <script>
 import PostService from "../services/post.service";
 import moment from "moment";
-const url = "https://Blog.herokuapp.com/posts/";
+const url = "https://bts-army-blog.herokuapp.com/posts/";
 export default {
   name: "AllPosts",
   components: {
