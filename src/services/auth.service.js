@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = "https://Blog.herokuapp.com/users/";
+const API = "https://bts-army-blog.herokuapp.com/users/";
 
 class AuthService {
   async login(user) {

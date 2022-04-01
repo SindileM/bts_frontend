@@ -1,6 +1,6 @@
 import axios from "axios";
 import authHeader from "./auth.header";
-const API = "https://Blog.herokuapp.com/posts/";
+const API = "https://bts-army-blog.herokuapp.com/posts/";
 
 class PostService {
   getAllPosts() {
