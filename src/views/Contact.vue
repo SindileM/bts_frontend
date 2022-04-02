@@ -36,10 +36,10 @@
         <div class="social-heading">
           <h3>Let's Get Social</h3>
         </div>
-        <!-- <div class="social-icons">
+        <div class="social-icons">
           <a
             class="s-item"
-            href="https://www.linkedin.com/in/nadeem-johnson-57b388224/"
+            href="https://www.linkedin.com/in/sindile-makhathini-b721a3196/"
             target="_blank"
           >
             <svg
@@ -63,7 +63,7 @@
           </a>
           <a
             class="s-item"
-            href="https://github.com/RoyalAdvisor"
+            href="https://github.com/SindileM"
             target="_blank"
           >
             <svg
@@ -87,7 +87,7 @@
           </a>
           <a
             class="s-item"
-            href="https://codepen.io/royaladvisor"
+            href="https://codepen.io/sindilem"
             target="_blank"
           >
             <svg
@@ -110,9 +110,9 @@
             <h5>Codepen</h5>
           </a>
         </div>
-      </div> -->
+      </div>
     </div>
-    </div>
+   
     <div class="footer-copyright">
       <h6 class="copyright">Copyright © 2022 BTS ARMY BLOG</h6>
     </div>
@@ -131,7 +131,7 @@ export default {
   },
   methods: {
     handleSubmit() {
-      fetch("https://final-blog-api.herokuapp.com/contact", {
+      fetch("https://bts-army-blog.herokuapp.com/contact", {
         method: "POST",
         body: JSON.stringify({
           name: this.name,

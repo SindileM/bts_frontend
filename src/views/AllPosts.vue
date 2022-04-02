@@ -25,6 +25,9 @@
           </div>
         </div>
       </div>
+           <header class="about-header">
+              <h3>Recent Posts</h3>
+            </header>
       <div
         class="post-item shadow"
         v-for="post in filteredPosts.slice(0, count)"
