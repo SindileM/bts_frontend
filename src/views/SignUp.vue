@@ -9,7 +9,7 @@
         <header class="form-header">
           <h2>Sign Up</h2>
         </header>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="profile">Profile</label>
           <Field
             name="profile"
@@ -18,7 +18,7 @@
             placeholder="Please enter your image link..."
           />
           <ErrorMessage name="profile" class="error-feedback" />
-        </div>
+        </div> -->
         <div class="form-group">
           <label for="username">Username</label>
           <Field
@@ -102,10 +102,10 @@ export default {
         .string()
         .required("Password is required!")
         .min(6, "Must be at least 6 characters!"),
-      profile: yup
-        .string()
-        .required("Profile is required!")
-        .max(200, "Can not exceed 200 characters!"),
+      // profile: yup
+      //   .string()
+      //   .required("Profile is required!")
+      //   .max(200, "Can not exceed 200 characters!"),
     });
     return {
       loading: false,
@@ -128,7 +128,7 @@ export default {
     handleSignUp(user) {
       this.loading = true;
       this.successful = false;
-      this.$store.dispatch("auth/register", user).then(
+      this.$store.dispatch("auth/signup", user).then(
         () => {
           this.successful = true;
           this.loading = false;
@@ -137,7 +137,7 @@ export default {
         (err) => {
           err =
             "Seems like that username is already in use, try using a different one.";
-          this.message = err;
+          this.message = err.message;
           this.loading = false;
           this.successful = false;
         }

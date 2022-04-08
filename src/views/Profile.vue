@@ -5,9 +5,7 @@
     </header>
     <div class="profile-container">
       <div class="card shadow">
-        <div class="card-image">
-          <img :src="currentUser.profile" alt="user-image" />
-        </div>
+
         <div class="card-body">
           <h2 class="card-title">User Info</h2>
           <h5>Status:</h5>
@@ -187,7 +185,7 @@
 </template>
 
 <script>
-const url = "https://final-blog-api.herokuapp.com/users/";
+const url = "http://localhost:3030/users/";
 import axios from "axios";
 export default {
   name: "Profile",

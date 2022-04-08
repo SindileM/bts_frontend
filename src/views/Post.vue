@@ -156,7 +156,6 @@
             <div class="col-md-12">
               <label for="main-image" class="form-label mt-1">Image *</label>
               <input
-                required
                 type="text"
                 v-model="updatedPost.main_image"
                 class="form-control"
@@ -270,10 +269,10 @@
 import axios from "axios";
 import PostService from "../services/post.service";
 import moment from "moment";
-const url = "https://Blog.herokuapp.com/posts/";
+const url = "https://bts-army-blog.herokuapp.com/posts/";
 
 export default {
-  name: "Postview",
+  name: "Post",
  
   data() {
     return {

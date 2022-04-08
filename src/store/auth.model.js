@@ -7,14 +7,14 @@ export const auth = {
   namespaced: true,
   state: initialState,
   actions: {
-    login({ commit }, user) {
-      return authService.login(user).then(
+    signin({ commit }, user) {
+      return authService.signin(user).then(
         (user) => {
-          commit("loginSuccess", user);
+          commit("signinSuccess", user);
           return Promise.resolve(user);
         },
         (error) => {
-          commit("loginFailure");
+          commit("signinFailure");
           return Promise.reject(error);
         }
       );
@@ -23,25 +23,25 @@ export const auth = {
       authService.logout();
       commit("logout");
     },
-    register({ commit }, user) {
-      return authService.register(user).then(
+    signup({ commit }, user) {
+      return authService.signup(user).then(
         (response) => {
-          commit("registerSuccess");
+          commit("signupSuccess");
           return Promise.resolve(response.data);
         },
         (error) => {
-          commit("registerFailure");
-          return Promise.reject(error);
+          commit("signupFailure");
+          return Promise.reject(err.message);
         }
       );
     },
   },
   mutations: {
-    loginSuccess(state, user) {
+    signinSuccess(state, user) {
       state.status.loggedIn = true;
       state.user = user;
     },
-    loginFailure(state) {
+    signinFailure(state) {
       state.status.loggedIn = false;
       state.user = null;
     },
@@ -49,10 +49,10 @@ export const auth = {
       state.status.loggedIn = false;
       state.user = null;
     },
-    registerSuccess(state) {
+    signupSuccess(state) {
       state.status.loggedIn = false;
     },
-    registerFailure(state) {
+    signupFailure(state) {
       state.status.loggedIn = false;
     },
   },

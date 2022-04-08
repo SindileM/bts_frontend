@@ -2,7 +2,7 @@ import axios from "axios";
 const API = "https://bts-army-blog.herokuapp.com/users/";
 
 class AuthService {
-  async login(user) {
+  async signin(user) {
     const response = await axios.post(`${API}signin`, {
       email: user.email,
       password: user.password,
@@ -15,7 +15,7 @@ class AuthService {
   logout() {
     localStorage.removeItem("user");
   }
-  register(user) {
+  signup(user) {
     return axios.post(`${API}signup`, {
       username: user.username,
       email: user.email,
