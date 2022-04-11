@@ -26,27 +26,7 @@
               data-bs-target="#updateUser"
             >
               Update
-            </button>
-            <button
-              type="button"
-              class="delete-profile-btn shadow-sm"
-              data-bs-toggle="modal"
-              data-bs-target="#deleteUser"
-            >
-              Delete
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="blog-footer">
-    <div class="footer-copyright">
-      <h6 class="copyright">Copyright © 2022 BTS ARMY BLOG</h6>
-    </div>
-  </footer>
-
-  <!-- Update User Modal -->
+            </button><!-- Update User Modal -->
   <div
     class="modal fade"
     id="updateUser"
@@ -134,6 +114,26 @@
     </div>
   </div>
 
+            <button
+              type="button"
+              class="delete-profile-btn shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#deleteUser"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="blog-footer">
+    <div class="footer-copyright">
+      <h6 class="copyright">Copyright © 2022 BTS ARMY BLOG</h6>
+    </div>
+  </footer>
+
+  
   <!-- Delete User Modal -->
   <div
     class="modal fade"
@@ -185,7 +185,7 @@
 </template>
 
 <script>
-const url = "http://localhost:3030/users/";
+const url = "https://bts-army-blog.herokuapp.com/users/";
 import axios from "axios";
 export default {
   name: "Profile",

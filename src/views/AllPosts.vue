@@ -223,7 +223,7 @@ export default {
             main_image: this.post.main_image,
             title: this.post.title,
             subtitle: this.post.subtitle,
-            catergory: this.post.catergory,
+            // catergory: this.post.catergory,
             desc: this.post.desc,
           }),
           headers: {
@@ -235,7 +235,7 @@ export default {
         })
           .then((res) => res.json())
           .then(() => {
-            this.loading = false;
+            // this.loading = false;
             location.reload();
           });
       } catch (error) {

@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
-    <div class="nav-wrapper">
-      <div class="nav-item" v-if="currentUser">
+    <div class="nav-wrapper" >
+      <div class="nav-item"  v-if="currentUser">
         <a href="#home-page">
           <router-link :to="{ path: '/' }" class="nav-link">Home</router-link>
         </a>
@@ -52,6 +52,7 @@
             >Sign In</router-link
           >
         </a>
+        <i class="fa fa-list mobile-nav-toggle"></i>
       </nav>
     </div>
   </nav>
